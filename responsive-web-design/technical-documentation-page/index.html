@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h2>Tailwind CSS Documentation</h2></header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#installation_-_tailwind_cli"
+            >Installation - Tailwind CLI</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#installation_-_using_postcss"
+            >Installation - Using PostCSS</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#installation_-_framework_guides"
+            >Installation - Framework Guides</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="installation_-_play_cdn"
+            >Installation - Play CDN</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <h1>Get started with Tailwind CSS</h1>
+
+      <section class="main-section" id="introduction">
+        <header><h2>Introduction</h2></header>
+        <p>
+          Tailwind CSS works by scanning all of your HTML files, JavaScript
+          components, and any other templates for class names, generating the
+          corresponding styles and then writing them to a static CSS file.
+        </p>
+        <p>It's fast, flexible, and reliable — with zero-runtime.</p>
+      </section>
+
+      <section class="main-section" id="installation_-_tailwind_cli">
+        <header><h2>Installation - Tailwind CLI</h2></header>
+        <p>
+          The simplest and fastest way to get up and running with Tailwind CSS
+          from scratch is with the Tailwind CLI tool. The CLI is also available
+          as a standalone executable if you want to use it without installing
+          Node.js.
+        </p>
+        <ol>
+          <li>
+            <h3>Install Tailwind CSS</h3>
+            <p>
+              Install <code>tailwindcss</code> via npm, and create your
+              <code>tailwind.config.js</code> file.
+            </p>
+            <pre><code>npm install -D tailwindcss
+npx tailwindcss init
+</code></pre>
+          </li>
+          <li>
+            <h3>Configure your template paths</h3>
+            <p>
+              Add the paths to all of your template files in your
+              <code>tailwind.config.js</code> file.
+            </p>
+            <pre><code>/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}</code></pre>
+          </li>
+          <li>
+            <h3>And so on...</h3>
+            <p>
+              Full documentation can be found
+              <a href="https://tailwindcss.com/docs/installation">here</a>
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="installation_-_using_postcss">
+        <header><h2>Installation - Using PostCSS</h2></header>
+        <p>
+          Installing Tailwind CSS as a PostCSS plugin is the most seamless way
+          to integrate it with build tools like webpack, Rollup, Vite, and
+          Parcel.
+        </p>
+        <ol>
+          <li>
+            <h3>Install Tailwind CSS</h3>
+            <p>
+              Install <code>tailwindcss</code> and its peer dependencies via
+              npm, and create your <code>tailwind.config.js</code> file.
+            </p>
+            <pre><code>npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init</code></pre>
+          </li>
+          <li>
+            <h3>Add Tailwind to your PostCSS configuration</h3>
+            <p>
+              Add <code>tailwindcss</code> and <code>autoprefixer</code> to your
+              <code>postcss.config.js</code> file, or wherever PostCSS is
+              configured in your project.
+            </p>
+            <pre><code>module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}</code></pre>
+          </li>
+          <li>
+            <h3>And so on...</h3>
+            <p>
+              Full documentation can be found
+              <a href="https://tailwindcss.com/docs/installation/using-postcss"
+                >here</a
+              >
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="installation_-_framework_guides">
+        <header><h2>Installation - Framework Guides</h2></header>
+        <p>
+          Framework-specific guides that cover our recommended approach to
+          installing Tailwind CSS in a number of popular environments.
+        </p>
+        <ul>
+          <li>
+            <h3>Next.js</h3>
+            <p>
+              Full-featured React framework with great developer experience.
+            </p>
+          </li>
+          <li>
+            <h3>Laravel</h3>
+            <p>
+              PHP web application framework with expressive, elegant syntax.
+            </p>
+          </li>
+          <li>
+            <h3>Vite</h3>
+            <p>Fast and modern development server and build tool.</p>
+          </li>
+          <p>
+            Don't see your framework of choice? Try using Tailwind CLI or
+            installing Tailwind as a PostCSS plugin instead.
+          </p>
+        </ul>
+      </section>
+
+      <section class="main-section" id="installation_-_play_cdn">
+        <header><h2>Installation - Play CDN</h2></header>
+        <p>
+          Use the Play CDN to try Tailwind right in the browser without any
+          build step. The Play CDN is designed for development purposes only,
+          and is not the best choice for production.
+        </p>
+        <ol>
+          <li>
+            <h3>Add the Play CDN script to your HTML</h3>
+            <p>
+              Add the Play CDN script tag to the <code>&lt;head&gt;</code> of
+              your HTML file, and start using Tailwind’s utility classes to
+              style your content.
+            </p>
+            <!-- ******* Start of xmp section ******* -->
+            <!-- xmp is deprecated and not recognised by VS Code, but is the easiest way to quote html with an html document -->
+            <xmp><!doctype html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  </body>
+  </html></xmp>
+            <!-- ******* End of xmp section ******* -->
+          </li>
+          <li>
+            <h3>Try customizing your config</h3>
+            <p>
+              Edit the <code>tailwind.config</code> object to customize your
+              configuration with your own design tokens.
+            </p>
+          </li>
+          <li>
+            <h3>And so on...</h3>
+            <p>
+              Full documentation can be found
+              <a href="https://tailwindcss.com/docs/installation/play-cdn"
+                >here</a
+              >
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
