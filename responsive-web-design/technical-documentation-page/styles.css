@@ -1,9 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap");
 
 * {
+  box-sizing: border-box;
   font-family: Palanquin, Verdana, Geneva, Tahoma, sans-serif;
+  color: #09090b;
+}
+
+ul,
+ol {
+  padding: 0;
 }
 
 ul {
   list-style: none;
+}
+
+ol {
+  margin-left: 0.75em;
+}
+
+p {
+  margin-top: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+code.inline-block {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 0.5em;
+  line-height: 1.75;
+  background-color: #1e293b;
+  color: white;
+}
+
+code.inline {
+  display: inline;
+  padding: 0 0.25em;
+  border-radius: 0.25em;
+  background-color: "";
+  color: "";
+}
+
+#navbar {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  padding: 2em 1em;
+}
+
+#navbar h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+#navbar li {
+  height: 2.5em;
+}
+
+#navbar li a {
+  color: #0f172a;
+  text-decoration: underline transparent;
+  transition: text-decoration-color 0.4s;
+}
+
+#navbar li a:hover {
+  text-decoration-color: #0f172a;
+}
+
+#main-doc {
+  max-width: 980px;
+  padding-top: 2em;
+}
+
+#main-doc h2 {
+  margin-top: 2em;
+}
+
+#introduction h2 {
+  margin-top: 0.425em;
+}
+
+#main-doc h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
 }

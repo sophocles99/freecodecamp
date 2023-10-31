@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Get started with Tailwind CSS</title>
   </head>
   <body>
     <nav id="navbar">
-      <header><h2>Tailwind CSS Documentation</h2></header>
+      <header><h1>Get started with Tailwind CSS</h1></header>
       <ul>
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <li>
@@ -27,15 +27,13 @@
           >
         </li>
         <li>
-          <a class="nav-link" href="installation_-_play_cdn"
+          <a class="nav-link" href="#installation_-_play_cdn"
             >Installation - Play CDN</a
           >
         </li>
       </ul>
     </nav>
     <main id="main-doc">
-      <h1>Get started with Tailwind CSS</h1>
-
       <section class="main-section" id="introduction">
         <header><h2>Introduction</h2></header>
         <p>
@@ -58,10 +56,10 @@
           <li>
             <h3>Install Tailwind CSS</h3>
             <p>
-              Install <code>tailwindcss</code> via npm, and create your
-              <code>tailwind.config.js</code> file.
+              Install <code class="inline">tailwindcss</code> via npm, and create your
+              <code class="inline">tailwind.config.js</code> file.
             </p>
-            <pre><code>npm install -D tailwindcss
+            <pre><code class="inline-block">npm install -D tailwindcss
 npx tailwindcss init
 </code></pre>
           </li>
@@ -69,9 +67,9 @@ npx tailwindcss init
             <h3>Configure your template paths</h3>
             <p>
               Add the paths to all of your template files in your
-              <code>tailwind.config.js</code> file.
+              <code class="inline">tailwind.config.js</code> file.
             </p>
-            <pre><code>/** @type {import('tailwindcss').Config} */
+            <pre><code class="inline-block">/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -101,20 +99,20 @@ module.exports = {
           <li>
             <h3>Install Tailwind CSS</h3>
             <p>
-              Install <code>tailwindcss</code> and its peer dependencies via
-              npm, and create your <code>tailwind.config.js</code> file.
+              Install <code class="inline">tailwindcss</code> and its peer dependencies via
+              npm, and create your <code class="inline">tailwind.config.js</code> file.
             </p>
-            <pre><code>npm install -D tailwindcss postcss autoprefixer
+            <pre><code class="inline-block">npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init</code></pre>
           </li>
           <li>
             <h3>Add Tailwind to your PostCSS configuration</h3>
             <p>
-              Add <code>tailwindcss</code> and <code>autoprefixer</code> to your
-              <code>postcss.config.js</code> file, or wherever PostCSS is
+              Add <code class="inline">tailwindcss</code> and <code class="inline">autoprefixer</code> to your
+              <code class="inline">postcss.config.js</code> file, or wherever PostCSS is
               configured in your project.
             </p>
-            <pre><code>module.exports = {
+            <pre><code class="inline-block">module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
@@ -141,24 +139,24 @@ npx tailwindcss init</code></pre>
         </p>
         <ul>
           <li>
-            <h3>Next.js</h3>
+            <a href="https://tailwindcss.com/docs/guides/nextjs"><h3>Next.js</h3></a>
             <p>
               Full-featured React framework with great developer experience.
             </p>
           </li>
           <li>
-            <h3>Laravel</h3>
+            <a href="https://tailwindcss.com/docs/guides/laravel"><h3>Laravel</h3></a>
             <p>
               PHP web application framework with expressive, elegant syntax.
             </p>
           </li>
           <li>
-            <h3>Vite</h3>
+            <a href="https://tailwindcss.com/docs/guides/vite"><h3>Vite</h3></a>
             <p>Fast and modern development server and build tool.</p>
           </li>
           <p>
-            Don't see your framework of choice? Try using Tailwind CLI or
-            installing Tailwind as a PostCSS plugin instead.
+            Don't see your framework of choice? Try using <a href="#installation_-_tailwind_cli">Tailwind CLI</a> or
+            installing <a href="#installation_-_using_postcss">Tailwind as a PostCSS plugin</a> instead.
           </p>
         </ul>
       </section>
@@ -174,31 +172,28 @@ npx tailwindcss init</code></pre>
           <li>
             <h3>Add the Play CDN script to your HTML</h3>
             <p>
-              Add the Play CDN script tag to the <code>&lt;head&gt;</code> of
+              Add the Play CDN script tag to the <code class="inline">&lt;head&gt;</code> of
               your HTML file, and start using Tailwind’s utility classes to
               style your content.
             </p>
-            <!-- ******* Start of xmp section ******* -->
-            <!-- xmp is deprecated and not recognised by VS Code, but is the easiest way to quote html with an html document -->
-            <xmp><!doctype html>
-  <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
+            <pre><code class="inline-block">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 class="text-3xl font-bold underline"&gt;
       Hello world!
-    </h1>
-  </body>
-  </html></xmp>
-            <!-- ******* End of xmp section ******* -->
+    &lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
           </li>
           <li>
             <h3>Try customizing your config</h3>
             <p>
-              Edit the <code>tailwind.config</code> object to customize your
+              Edit the <code class="inline">tailwind.config</code> object to customize your
               configuration with your own design tokens.
             </p>
           </li>
