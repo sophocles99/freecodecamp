@@ -14,7 +14,7 @@
     <title>Product Landing Page</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav id="top-nav">
         <ul>
           <li><a href="#">Store Locator</a></li>
@@ -24,7 +24,7 @@
 
       <nav id="nav-bar">
         <div id="nav-bar-left">
-          <a href="#"
+          <a href="#" class="nav-link"
             ><img
               id="header-img"
               src="https://sophocles99-images.s3.eu-west-2.amazonaws.com/next-white-v2-logo.png"
@@ -36,12 +36,26 @@
         </div>
         <ul id="nav-bar-right">
           <li id="my-account">
-            <p id="my-account-label">My Account</p>
-            <i class="fa-regular fa-user"></i>
+            <a href="#" class="nav-link">
+              <p id="my-account-label">My Account</p>
+            </a>
           </li>
-          <li><i class="fa-regular fa-heart"></i></li>
-          <li><i class="fa-solid fa-bag-shopping"></i></li>
-          <li><button id="checkout">Checkout</button></li>
+          <li>
+            <a href="#" class="nav-link"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <button id="checkout">Checkout</button>
+            </a>
+          </li>
         </ul>
       </nav>
 
