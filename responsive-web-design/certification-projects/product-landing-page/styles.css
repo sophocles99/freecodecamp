@@ -172,15 +172,38 @@ a {
   color: white;
 }
 
-#christmas a {
-  color: #b78b20;
-}
-
 #clearance a {
   color: #ff6a3b;
 }
 
 section {
   height: 30rem;
-  border: 1px solid #b78b20;
+  /* border: 1px solid #b78b20; */
+}
+
+#product {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 4rem;
+}
+
+#product-static {
+  flex-grow: 2;
+  border: 1px solid black;
+}
+
+#thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#thumbnails img {
+  max-width: 3rem;
+}
+
+#product-details {
+  flex-grow: 3;
+  border: 1px solid black;
 }
