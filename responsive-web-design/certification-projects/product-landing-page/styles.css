@@ -85,12 +85,12 @@ a {
   width: 5rem;
 }
 
-#nav-bar-left input,
+.user-input,
 #nav-bar-left button {
   height: 2.25rem;
 }
 
-#nav-bar-left input {
+.user-input {
   width: 28rem;
   padding-left: 1rem;
   padding-right: 2rem;
@@ -98,6 +98,7 @@ a {
   border-radius: 1.125rem;
   border-bottom-left-radius: 1.125rem;
   background-color: #f7f7f7;
+  color: grey;
 }
 
 #nav-bar-left input:hover {
@@ -250,6 +251,7 @@ section {
 #user-input {
   display: grid;
   grid-template-columns: 12.5% 87.5%;
+  row-gap: 1rem;
   font-size: small;
 }
 
@@ -282,4 +284,13 @@ input:checked + .colour-text-label + .colour-img img {
   width: 2.25rem;
   padding: 0.25rem;
   border: 2px solid black;
+}
+
+#size-select {
+  width: 22.25rem;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="grey"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem);
+  background-size: 1rem;
 }
