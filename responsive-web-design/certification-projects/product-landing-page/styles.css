@@ -24,6 +24,20 @@ a {
   color: black;
 }
 
+.btn {
+  height: 2.25rem;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  font-size: inherit;
+}
+
+.cta-btn {
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: #007a7a;
+}
+
 /* Header styles */
 #top-nav ul,
 #nav-bar,
@@ -136,17 +150,6 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-#checkout-btn {
-  height: 2.25rem;
-  padding: 0 2rem;
-  border: none;
-  border-radius: 2rem;
-  font-size: inherit;
-  font-weight: bold;
-  color: white;
-  background-color: #007a7a;
 }
 
 #category-nav {
@@ -293,4 +296,27 @@ input:checked + .colour-text-label + .colour-img img {
   background-repeat: no-repeat;
   background-position: calc(100% - 0.75rem);
   background-size: 1rem;
+}
+
+#add-to-bag-btn {
+  grid-column: 2;
+  width: 22.25rem;
+  margin-top: 1rem;
+}
+
+#subsidiary-btn-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 22.25rem;
+  text-wrap: nowrap;
+}
+
+.subsidiary-btn {
+  width: 49%;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid black;
 }
