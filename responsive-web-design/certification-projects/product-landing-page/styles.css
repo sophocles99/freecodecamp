@@ -320,3 +320,18 @@ input:checked + .colour-text-label + .colour-img img {
   background-color: white;
   border: 1px solid black;
 }
+
+#favourite-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+#favourite-btn-icon {
+  font-size: 1.5rem;
+}
+
+#favourite-btn-text {
+  margin: 0 auto;
+}
