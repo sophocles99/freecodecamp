@@ -2,6 +2,7 @@
 
 :root {
   --max-width: 1280px;
+  --accent-green: #007a7a;
 }
 
 * {
@@ -35,7 +36,7 @@ a {
   border: none;
   font-weight: bold;
   color: white;
-  background-color: #007a7a;
+  background-color: var(--accent-green);
 }
 
 /* Header styles */
@@ -334,4 +335,47 @@ input:checked + .colour-text-label + .colour-img img {
 
 #favourite-btn-text {
   margin: 0 auto;
+}
+
+#product-description {
+  font-size: small;
+  padding-bottom: 0.5rem;
+}
+
+#read-more-toggle {
+  display: none;
+}
+
+.full-desc {
+  display: none;
+  margin-bottom: 0.25rem;
+}
+
+ul.full-desc {
+  list-style-position: inside;
+  margin-bottom: 0.75rem;
+}
+
+.full-desc li {
+  list-style-type:disc
+}
+
+#read-more-toggle:checked ~ * > .short-desc {
+  display: none;
+}
+
+#read-more-toggle:checked ~ .full-desc,
+#read-more-toggle:checked ~ * > .full-desc {
+  display: revert;
+}
+
+#read-more-label-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.read-more-label {
+  font-weight: bold;
+  color: var(--accent-green);
 }
